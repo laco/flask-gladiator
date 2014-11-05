@@ -2,7 +2,7 @@
 Gladiator
 *********
 
-Validation Framework for Python3
+Validation Framework for Python3 (Flask Extension)
 
 
 A quick example
