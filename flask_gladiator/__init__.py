@@ -1,4 +1,3 @@
-from gladiator.core import validate as _validate
 from functools import wraps
 
 
@@ -70,6 +69,8 @@ class Gladiator(object):
         app.extensions['gladiator'] = self
 
     def validate(self, validator, obj, selector=None, ctx=None, **kw):
+        from gladiator.core import validate as _validate
+
         _ctx = self._default_ctx(ctx)
         result = _validate(validator, obj, selector, ctx=_ctx, **kw)
         return result
